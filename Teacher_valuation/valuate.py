@@ -13,7 +13,7 @@ username = dss.find_element_by_name('user')
 username.send_keys(rollnumber)
 password = dss.find_element_by_name('passwd')
 password.send_keys(passwd)
-dss.find_element_by_name('Submit1').click()
+dss.find_element_by_class('btn btn-lg btn-info float-right').click()
 dss.get('http://www.dss.nitc.ac.in/nitcreg/tlogin.aspx?regno='+rollnumber)
 
 def evaluate():
